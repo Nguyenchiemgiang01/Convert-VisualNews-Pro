@@ -11,9 +11,6 @@
   "ContentMaincontent": {
     "description": "Auto imported from components/content/Maincontent.vue"
   },
-  "Fooddrink": {
-    "description": "Auto imported from components/fooddrink/index.vue"
-  },
   "FollowAdvertisting": {
     "description": "Auto imported from components/follow/Advertisting.vue"
   },
@@ -23,11 +20,14 @@
   "Follow": {
     "description": "Auto imported from components/follow/Follow.vue"
   },
-  "PostCatagory": {
-    "description": "Auto imported from components/post/PostCatagory.vue"
-  },
   "Lifestyle": {
     "description": "Auto imported from components/lifestyle/index.vue"
+  },
+  "Fooddrink": {
+    "description": "Auto imported from components/fooddrink/index.vue"
+  },
+  "PostCatagory": {
+    "description": "Auto imported from components/post/PostCatagory.vue"
   },
   "Service": {
     "description": "Auto imported from components/service/index.vue"

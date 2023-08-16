@@ -670,12 +670,12 @@ __webpack_require__.d(components_namespaceObject, "Business", function() { retur
 __webpack_require__.d(components_namespaceObject, "Content", function() { return Content; });
 __webpack_require__.d(components_namespaceObject, "ContentLastContent", function() { return ContentLastContent; });
 __webpack_require__.d(components_namespaceObject, "ContentMaincontent", function() { return ContentMaincontent; });
-__webpack_require__.d(components_namespaceObject, "Fooddrink", function() { return Fooddrink; });
 __webpack_require__.d(components_namespaceObject, "FollowAdvertisting", function() { return FollowAdvertisting; });
 __webpack_require__.d(components_namespaceObject, "FollowFashion", function() { return FollowFashion; });
 __webpack_require__.d(components_namespaceObject, "Follow", function() { return Follow; });
-__webpack_require__.d(components_namespaceObject, "PostCatagory", function() { return PostCatagory; });
 __webpack_require__.d(components_namespaceObject, "Lifestyle", function() { return Lifestyle; });
+__webpack_require__.d(components_namespaceObject, "Fooddrink", function() { return Fooddrink; });
+__webpack_require__.d(components_namespaceObject, "PostCatagory", function() { return PostCatagory; });
 __webpack_require__.d(components_namespaceObject, "Service", function() { return Service; });
 __webpack_require__.d(components_namespaceObject, "Socialmedia", function() { return Socialmedia; });
 __webpack_require__.d(components_namespaceObject, "SvgsDribbbleIcon", function() { return SvgsDribbbleIcon; });
@@ -873,7 +873,7 @@ async function setContext(app, context) {
   // If context not defined, create it
   if (!app.context) {
     app.context = {
-      isStatic: false,
+      isStatic: true,
       isDev: false,
       isHMR: false,
       app,
@@ -1975,6 +1975,9 @@ const layouts = {
     },
     isFetching() {
       return this.nbFetching > 0;
+    },
+    isPreview() {
+      return Boolean(this.$options.previewData);
     }
   },
   methods: {
@@ -2065,12 +2068,12 @@ const Business = () => __webpack_require__.e(/* import() | components/business *
 const Content = () => __webpack_require__.e(/* import() | components/content */ 2).then(__webpack_require__.bind(null, 88)).then(c => wrapFunctional(c.default || c));
 const ContentLastContent = () => __webpack_require__.e(/* import() | components/content-last-content */ 3).then(__webpack_require__.bind(null, 57)).then(c => wrapFunctional(c.default || c));
 const ContentMaincontent = () => __webpack_require__.e(/* import() | components/content-maincontent */ 4).then(__webpack_require__.bind(null, 56)).then(c => wrapFunctional(c.default || c));
-const Fooddrink = () => __webpack_require__.e(/* import() | components/fooddrink */ 8).then(__webpack_require__.bind(null, 95)).then(c => wrapFunctional(c.default || c));
 const FollowAdvertisting = () => __webpack_require__.e(/* import() | components/follow-advertisting */ 6).then(__webpack_require__.bind(null, 104)).then(c => wrapFunctional(c.default || c));
 const FollowFashion = () => __webpack_require__.e(/* import() | components/follow-fashion */ 7).then(__webpack_require__.bind(null, 105)).then(c => wrapFunctional(c.default || c));
 const Follow = () => __webpack_require__.e(/* import() | components/follow */ 5).then(__webpack_require__.bind(null, 58)).then(c => wrapFunctional(c.default || c));
-const PostCatagory = () => __webpack_require__.e(/* import() | components/post-catagory */ 10).then(__webpack_require__.bind(null, 32)).then(c => wrapFunctional(c.default || c));
 const Lifestyle = () => __webpack_require__.e(/* import() | components/lifestyle */ 9).then(__webpack_require__.bind(null, 91)).then(c => wrapFunctional(c.default || c));
+const Fooddrink = () => __webpack_require__.e(/* import() | components/fooddrink */ 8).then(__webpack_require__.bind(null, 95)).then(c => wrapFunctional(c.default || c));
+const PostCatagory = () => __webpack_require__.e(/* import() | components/post-catagory */ 10).then(__webpack_require__.bind(null, 32)).then(c => wrapFunctional(c.default || c));
 const Service = () => __webpack_require__.e(/* import() | components/service */ 11).then(__webpack_require__.bind(null, 93)).then(c => wrapFunctional(c.default || c));
 const Socialmedia = () => __webpack_require__.e(/* import() | components/socialmedia */ 12).then(__webpack_require__.bind(null, 92)).then(c => wrapFunctional(c.default || c));
 const SvgsDribbbleIcon = () => __webpack_require__.e(/* import() | components/svgs-dribbble-icon */ 13).then(__webpack_require__.bind(null, 82)).then(c => wrapFunctional(c.default || c));
